@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+body {
+  background-color: #fffaf0;
+  color: #777;
+}
+/* Navbar styling */
+nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav .logo a img {
+  /* display: inline-block; */
+  height: 30px;
+}
+nav .menu .menu-icon i {
+  color: burlywood;
+}
+nav .menu .menu-list {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  display: none;
+}
+nav .menu ul {
+  flex-direction: column;
+  /* display: none; */
+  list-style: none;
+}
+
+nav .menu ul.active {
+  display: flex;
+}
+
+nav .menu ul li {
+  margin: 15px;
+}
+
+nav .menu ul li a {
+  color: burlywood;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+nav .menu ul li a:hover {
+  color: #f39c12;
+}
+
+section .container {
+  min-height: 100vh;
+}
+
+section .container .section-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#home .carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#home .carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+#home .carousel .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#home .carousel .slide.active {
+  opacity: 1;
+}
+
+#home .carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  color: burlywood;
+  /* text-align: center; */
+  width: 90%;
+  max-width: 400px;
+}
+
+#home .form h1,
+#home .form p {
+  text-align: center;
+}
+
+#home .form h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#home .form form {
+  margin: 15px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+#home .form form input {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-bottom: 1px solid burlywood;
+  color: burlywood;
+  border-radius: 2px;
+  padding: 10px;
+  width: 100%;
+}
+
+#home .form form input:focus {
+  outline: none;
+  border-bottom: 1px solid #f39c12;
+}
+
+#home .form form select {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  /* color: burlywood; */
+  color: #777;
+  border-bottom: 1px solid burlywood;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 2px;
+  width: 100%;
+}
+#home .form form select:focus {
+  outline: none;
+  border-bottom: 1px solid #f39c12;
+}
+#home .form form select option {
+  background-color: #fff;
+  color: #000;
+  /* margin: 10px; */
+}
+
+#home .form form button {
+  background-color: transparent;
+  color: burlywood;
+  border: none;
+  border: 2px solid burlywood;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+#home .form form button:hover {
+  background-color: burlywood;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#package .container {
+  padding: 20px;
+}
+
+#package .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#package .section-content .card {
+  /* align-items: center; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+}
+
+#contact .container {
+  padding: 20px;
+}
+
+#contact .section-content {
+  text-align: center;
+}
+
+#contact .section-content button {
+  background-color: transparent;
+  color: burlywood;
+  border: none;
+  border: 2px solid burlywood;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+#contact .section-content button:hover {
+  background-color: burlywood;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  padding: 20px;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  nav .menu .menu-icon {
+    display: none;
+  }
+  nav .menu .menu-list {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    display: block !important;
+  }
+  nav .menu ul {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="assets/icons/travel-agency-2.png" type="image/png">
+    <script src="https://kit.fontawesome.com/14ed735c0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home"><img src="assets/icons/travel-agency-2.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <div class="menu-icon" data-state="closed">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <i class="fa-solid fa-minus"></i> -->
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#package">Package</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="assets/images/slider1.jpg" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider2.jpg" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider3.jpg" alt="Banner 3">
+                </div>
+            </div>
+            <div class="form">
+                <div class="form-content">
+                    <h1>Travel Agent</h1>
+                    <p>Start Your Next Adventure Today</p>
+                    <form action="">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Email address" required>
+                        <select name="package-select" id="package-select">
+                            <option value="" disabled selected>Select a package</option>
+                            <option value="package1">Package 1</option>
+                            <option value="package2">Package 2</option>
+                            <option value="package3">Package 3</option>
+                            <option value="package4">Package 4</option>
+                            <option value="package5">Package 5</option>
+                            <option value="package6">Package 6</option>
+                        </select>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Package section -->
+    <section class="package" id="package">
+        <div class="container">
+            <div class="section-title">Paket Travel</div>
+            <div class="section-content">
+                <div class="card">
+                    <h3>Package 1</h3>
+                    <p>Description of Package 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Package 2</h3>
+                    <p>Description of Package 2.</p>
+                </div>
+                <div class="card">
+                    <h3>Package 3</h3>
+                    <p>Description of Package 3.</p>
+                </div>
+                <div class="card">
+                    <h3>Package 4</h3>
+                    <p>Description of Package 4.</p>
+                </div>
+                <div class="card">
+                    <h3>Package 5</h3>
+                    <p>Description of Package 5.</p>
+                </div>
+                <div class="card">
+                    <h3>Package 6</h3>
+                    <p>Description of Package 6.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                Your Closing Argument Headline
+            </div>
+            <div class="section-content">
+                <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla,</p>
+                <button>Call to action</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- <img src="assets/icons/travel-agency-2.png" alt=""> -->
+            </div>
+            <div class="footer-text">
+                <p>© 2023 Travel Agent. All rights reserved.</p>
+            </div>
+    </footer>
+</body>
+</html>
