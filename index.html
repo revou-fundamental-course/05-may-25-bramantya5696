@@ -49,10 +49,12 @@
                 <div class="form-content">
                     <h1>Travel Agent</h1>
                     <p>Start Your Next Adventure Today</p>
-                    <form action="">
-                        <input type="text" placeholder="Your name" required>
-                        <input type="email" placeholder="Email address" required>
-                        <select name="package-select" id="package-select">
+                    <form id="contactForm" action="">
+                        <input type="text" id="formName" placeholder="Your name" required>
+                        <div class="alert" id="nameAlert"></div>
+                        <input type="email" id="formEmail" placeholder="Email address" required>
+                        <div class="alert" id="emailAlert"></div>
+                        <select name="package-select" id="packageSelect">
                             <option value="" disabled selected>Select a package</option>
                             <option value="package1">Package 1</option>
                             <option value="package2">Package 2</option>
@@ -61,6 +63,7 @@
                             <option value="package5">Package 5</option>
                             <option value="package6">Package 6</option>
                         </select>
+                        <div class="alert" id="packageAlert"></div>
                         <button type="submit">Send</button>
                     </form>
                 </div>

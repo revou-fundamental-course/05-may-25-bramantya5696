@@ -10,13 +10,22 @@ body {
 }
 /* Navbar styling */
 nav {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: transparent; */
   color: #fff;
   padding: 10px 20px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav.bg-colored {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav.bg-invisible {
+  background-color: transparent;
 }
 
 nav .nav-container {
@@ -148,6 +157,12 @@ section .container .section-title {
   margin: 15px;
   /* display: flex;
   flex-direction: column; */
+}
+
+#home .form form .alert {
+  color: red;
+  font-size: 0.85em;
+  margin-left: 10px;
 }
 
 #home .form form input {
